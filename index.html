@@ -92,22 +92,26 @@
     </div>
 
     <footer class="nav-footer">
-      <button type="button" id="button-about" data-modal="about" class="nav-footer-button">About</button>
+      <button type="button" id="button-about" data-modal="about" class="nav-footer-button">关于</button>
       <a class="nav-footer-logo" href="https://github.com" aria-label="Homepage">
         <svg class="nav-footer-icon"><use xlink:href="assets/img/icons.svg#icon-love"></use></svg>
       </a>
     </footer>
   </nav>
 
+  <!-- todo main里的dom是如何插入的 -->
   <main class="content js-content"></main>
 
   <script>
-    require('./assets/imports')
-    require('./assets/ex-links')
-    require('./assets/nav')
-    require('./assets/demo-btns')
-    require('./assets/code-blocks')
-    require('./assets/normalize-shortcuts')
+    const $ = require('./assets/jquery.js')
+    $(() => {
+      require('./assets/imports')
+      require('./assets/ex-links')
+      require('./assets/nav')
+      require('./assets/demo-btns')
+      require('./assets/code-blocks')
+      require('./assets/normalize-shortcuts')
+    })
   </script>
 </body>
 </html>
