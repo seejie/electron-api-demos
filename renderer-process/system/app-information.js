@@ -7,6 +7,6 @@ appInfoBtn.addEventListener('click', () => {
 })
 
 ipcRenderer.on('got-app-path', (event, path) => {
-  const message = `This app is located at: ${path}`
+  const message = `应用地址: ${path}`
   document.getElementById('got-app-info').innerHTML = message
 })

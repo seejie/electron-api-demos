@@ -5,6 +5,6 @@ const copyInput = document.getElementById('copy-to-input')
 
 copyBtn.addEventListener('click', () => {
   if (copyInput.value !== '') copyInput.value = ''
-  copyInput.placeholder = 'Copied! Paste here to see.'
+  copyInput.placeholder = '已复制，请粘贴到此处'
   clipboard.writeText('Electron Demo!')
 })

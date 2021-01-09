@@ -86,6 +86,7 @@ function makeSingleInstance () {
 
 // Require each JS file in the main-process dir
 function loadDemos () {
+  // main-process内的js不是在html引用的，而是打包到主进程的，所以修改后不会立即生效
   const files = glob.sync(path.join(__dirname, 'main-process/**/*.js'))
   files.forEach((file) => { require(file) })
 }

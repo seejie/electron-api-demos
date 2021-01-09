@@ -121,6 +121,13 @@ let template = [{
       shell.openExternal('http://electron.atom.io')
     }
   }]
+}, {
+  label: '关于',
+  submenu: [{
+    label: '作者',
+    accelerator: 'test',
+    role: 'author'
+  }]
 }]
 
 function addUpdateMenuItems (items, position) {

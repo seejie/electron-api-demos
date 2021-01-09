@@ -4,7 +4,7 @@
       <div class="section-wrapper">
         <h1>
           <svg class="section-icon"><use xlink:href="assets/img/icons.svg#icon-windows"></use></svg>
-          Create and Manage Windows
+          创建和管理窗口
         </h1>
         <h3>The <code>BrowserWindow</code> module in Electron allows you to create a new browser window or manage an existing one.</h3>
 
@@ -16,7 +16,7 @@
 
     <div class="demo">
       <div class="demo-wrapper">
-        <button id="new-window-demo-toggle" class="js-container-target demo-toggle-button">Create a new window
+        <button id="new-window-demo-toggle" class="js-container-target demo-toggle-button">创建新窗口
           <div class="demo-meta u-avoid-clicks">Supports: Win, macOS, Linux <span class="demo-meta-divider">|</span> Process: Main</div>
         </button>
         <div class="demo-box">
@@ -44,7 +44,7 @@
 
     <div class="demo">
       <div class="demo-wrapper">
-        <button id="manage-window-demo-toggle" class="js-container-target demo-toggle-button">Manage window state
+        <button id="manage-window-demo-toggle" class="js-container-target demo-toggle-button">管理窗口状态
           <div class="demo-meta u-avoid-clicks">Supports: Win, macOS, Linux <span class="demo-meta-divider">|</span> Process: Main</div>
         </button>
         <div class="demo-box">
@@ -62,7 +62,7 @@
 
     <div class="demo">
       <div class="demo-wrapper">
-        <button id="using-window-events-demo-toggle" class="js-container-target demo-toggle-button">Window events: blur and focus
+        <button id="using-window-events-demo-toggle" class="js-container-target demo-toggle-button">多窗口切换失焦聚焦
           <div class="demo-meta u-avoid-clicks">Supports: Win, macOS, Linux <span class="demo-meta-divider">|</span> Process: Main</div>
         </button>
         <div class="demo-box">
@@ -79,7 +79,7 @@
 
     <div class="demo">
       <div class="demo-wrapper">
-        <button class="js-container-target demo-toggle-button">Create a frameless window
+        <button class="js-container-target demo-toggle-button">创建无边框窗口
           <div class="demo-meta u-avoid-clicks">Supports: Win, macOS, Linux <span class="demo-meta-divider">|</span> Process: Main</div>
         </button>
         <div class="demo-box">
@@ -111,9 +111,13 @@
     </div>
 
     <script type="text/javascript">
+      // 创建窗口
       require('./renderer-process/windows/create-window')
+      // 管理窗口
       require('./renderer-process/windows/manage-window')
+      // 窗口失焦聚焦
       require('./renderer-process/windows/using-window-events')
+      // 创建无边框窗口
       require('./renderer-process/windows/frameless-window')
     </script>
 

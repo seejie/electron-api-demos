@@ -4,6 +4,6 @@ const homeDir = os.homedir()
 const sysInfoBtn = document.getElementById('sys-info')
 
 sysInfoBtn.addEventListener('click', () => {
-  const message = `Your system home directory is: ${homeDir}`
+  const message = `系统主目录: ${homeDir}`
   document.getElementById('got-sys-info').innerHTML = message
 })

@@ -4,7 +4,7 @@
       <div class="section-wrapper">
         <h1>
           <svg class="section-icon"><use xlink:href="assets/img/icons.svg#icon-windows"></use></svg>
-          Handling Window Crashes and Hangs
+          处理窗口崩溃和挂起
         </h1>
         <h3>The <code>BrowserWindow</code> module will emit events when the renderer process crashes or hangs. You can listen for these events and give users the chance to reload, wait or close that window.</h3>
 
@@ -14,7 +14,7 @@
 
     <div class="demo">
       <div class="demo-wrapper">
-        <button id="new-window-crashes-demo-toggle" class="js-container-target demo-toggle-button">Relaunch window after the process crashes
+        <button id="new-window-crashes-demo-toggle" class="js-container-target demo-toggle-button">崩溃后重启窗口
           <div class="demo-meta u-avoid-clicks">Supports: Win, macOS, Linux <span class="demo-meta-divider">|</span> Process: Main</div>
         </button>
         <div class="demo-box">
@@ -32,7 +32,7 @@
 
     <div class="demo">
       <div class="demo-wrapper">
-        <button id="new-window-hangs-demo-toggle" class="js-container-target demo-toggle-button">Relaunch window after the process hangs
+        <button id="new-window-hangs-demo-toggle" class="js-container-target demo-toggle-button">挂起后（窗口无响应）重启窗口
           <div class="demo-meta u-avoid-clicks">Supports: Win, macOS, Linux <span class="demo-meta-divider">|</span> Process: Main</div>
         </button>
         <div class="demo-box">
@@ -60,7 +60,9 @@
 
 
     <script type="text/javascript">
+      // 处理窗口崩溃
       require('./renderer-process/windows/process-crash')
+      // 处理窗口挂起
       require('./renderer-process/windows/process-hang')
     </script>
 
