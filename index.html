@@ -105,11 +105,17 @@
   <script>
     const $ = require('./assets/jquery.js')
     $(() => {
+      // 导入所有模板
       require('./assets/imports')
+      // 打开外部链接
       require('./assets/ex-links')
+      // 初始化menu
       require('./assets/nav')
+      // 演示按钮
       require('./assets/demo-btns')
+      // 代码块高亮
       require('./assets/code-blocks')
+      // 标准化快捷键及样式在不同平台
       require('./assets/normalize-shortcuts')
     })
   </script>
